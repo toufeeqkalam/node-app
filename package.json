@@ -1,0 +1,30 @@
+{
+  "name": "quotes",
+  "version": "1.0.0",
+  "description": "A nodejs crud app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toufeeqkalam/"
+  },
+  "keywords": [
+    "nodejs",
+    "crud",
+    "express",
+    "mongodb"
+  ],
+  "author": "Toufeeq Kalam",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongodb": "^3.1.4"
+  },
+  "devDependencies": {
+    "body-parser": "^1.18.3",
+    "nodemon": "^1.18.4"
+  }
+}
