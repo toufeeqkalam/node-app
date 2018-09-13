@@ -34,12 +34,18 @@ app.get('/', function (req, res) {
 
 app.post('/quotes', function (req, res, err) {
    db.collection('quotes').insertOne(req.body, function (err, result) {
-       if(err){
-           return console.log(err)
-       }else{
-           console.log('Saved to database');
-           res.redirect('/');
-       }
+       if(err)return console.log(err);
+       console.log('Saved to database');
+       res.redirect('/');
+
 
    });
+
+// app.get('/retrieveQuotes', function (req, res, err) {
+//     if(err) console.log(err);
+//     db.collection('quotes').find().toJSON(function (err, res) {
+//         console.log(res)
+//         res.render('index.ejs', {quotes: res});
+//     });
+//   });
 });
